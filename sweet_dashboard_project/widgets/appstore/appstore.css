@@ -1,0 +1,16 @@
+.widget-appstore {
+  background: #999999 url("../assets/apple_logo.png") no-repeat 50% 50%; }
+  .widget-appstore .title {
+    font-weight: bold;
+    color: white;
+    opacity: 0.9; }
+  .widget-appstore .appstore-rating-container div > div {
+    font-size: 24px; }
+  .widget-appstore .appstore-rating-value {
+    font-size: 76px; }
+    .widget-appstore .appstore-rating-value #appstore-rating-integer-value {
+      font-weight: bold; }
+  .widget-appstore .appstore-voters-count {
+    font-size: 1.5em; }
+    .widget-appstore .appstore-voters-count #appstore-voters-count-value {
+      font-weight: bold; }

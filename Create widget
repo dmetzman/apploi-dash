@@ -1,0 +1,8 @@
+<li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+  <div data-id="github_feed" data-view="GithubFeed" data-title="Github News Feed"></div>
+<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+
+class Dashing.GithubFeed extends Dashing.Widget
+
+console.log("Hello World")
+

@@ -1,0 +1,45 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":3,"size_y":3},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":2,"size_y":1}]')
+});
+</script>
+
+
+<% content_for :title do %>1080p dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/apploi.jpg"></div>
+    </li>
+
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="Tweets tagged with #apploi"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="app_store_rating" data-view="Appstore" data-title="Apploi App"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="3">
+    <div data-id='facebook_posts' data-view='FacebookPosts' data-title='Facebook Info'></div>
+  </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fblinkstat" data-view="List" data-unordered="true" data-title="FB link stats" data-moreinfo="for www.apploi.com links"></div>
+    <i class="icon-facebook icon-background"></i>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <div data-id="reddit" data-view="Reddit"></div>
+    </li>
+  
+
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+
+</div>
